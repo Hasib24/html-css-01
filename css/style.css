@@ -1,0 +1,231 @@
+/* body */
+body{
+    margin: 0;
+}
+.uni-padding{
+    padding: 0 7%;
+}
+
+/* Top Bar */
+#topbar{
+    background-color: gray;
+    padding-top: 18px;
+    padding-bottom:18px;
+    overflow: auto;
+}
+#social-icon{
+    float: right;
+}
+#tollfree{
+    float: left;
+    color: white;
+    margin: 0;
+    margin-top: 5px;
+}
+.fab{
+    background-color: white;
+    color: gray;
+    padding: 7px;
+    border-radius: 50%;
+}
+.fa-facebook{
+    padding:7px 7px;
+}
+.fa-whatsapp{
+    padding: 6px 7px;
+}
+.fa-instagram{
+    padding: 6px 7px;
+}
+
+/* Logo bar  */
+#logobar img{
+    width: 200px;
+    margin: 25px 0;
+}
+
+/* nav bar  */
+#navbar{
+    background-color: orangered;
+}
+#navbar ul{
+    margin: 0;
+    padding: 0;
+}
+#navbar ul li{
+    display: inline-block;
+    padding: 20px 0;
+    padding-right: 35px;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* poster  */
+#poster{
+    background-image: url(../images/pexels-burst-374870.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#poster h1{
+    font-size: 50px;
+    text-shadow:black 5px 5px 10px;
+    color: white;
+}
+#poster p{
+    color: white;
+    text-shadow: black 5px 5px 8px;
+    text-align: center;
+}
+
+/* Why us section  */
+#whysection{
+    overflow: auto;
+    margin-bottom: 50px;
+}
+.section33{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+    box-sizing: border-box;
+}
+.section33 img{
+    height: 150px;
+    width: 150px;
+}
+.red-heading{
+    color:orangered ;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.section33 h2{
+    color: orangered;
+}
+
+/* Contact section  */
+#contact-container{
+    background-color: orangered;
+    overflow: auto;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+#section70{
+    width: 70%;
+    float: left;
+}
+#section30{
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding-top: 60px;
+}
+#contact-btn{
+    background-color: white;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Blog section */
+.section33 a{
+    text-decoration: none;
+    color: tomato;
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+}
+
+/* Subscribe section  */
+#subscribe-section{
+    background-color: orangered;
+    color: white;
+    overflow: auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.section50{
+    width: 50%;
+    float: left;
+}
+.section50 h2{
+    text-align: right;
+    font-size: 27px;
+    padding-right: 50px;
+}
+.section50 form{
+    padding-top: 25px;
+}
+.section50 input[type="text"]{
+    padding: 10px 50px;
+    font-size: 15px;
+    color: orangered;
+    margin-right: 20px;
+    border: 0px;
+    width: 45%;
+    /* border-radius: 10px; */
+
+}
+.section50 input[type="Submit"]{
+   padding: 7px 35px; 
+   font-size: 15px;
+   color: orangered;
+   border: 0px;
+}
+
+
+
+
+/* footer  */
+#imp-link{
+    background-color: gray;
+    color: white;
+    overflow: auto;
+}
+.div33{
+    width: 33.33%;
+    float: left;
+    padding: 25px 50px;
+    box-sizing: border-box;
+}
+.div33 h3{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+#footer-menu{
+    list-style-type: none;
+    padding: 0;
+}
+#footer-menu li{
+    padding-bottom: 8px;
+}
+#footer-menu li a{
+    text-decoration: none;
+    color: white;
+}
+#footer-menu-container{
+    padding-left: 100px;
+}
+#copyright{
+    text-align: center;
+    background-color: #222f3e;
+    color: #cbcbcb;
+    padding: 10px;
+}
+
+/* Responsive iPad  */
+@media only screen and ( max-width= 768px ){
+    padding-right: 15px;
+}
