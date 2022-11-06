@@ -14,6 +14,7 @@
     margin: 20px auto;
 }
 
+
 /* Top Bar */
 #topbar{
     background-color: #222f3e;
@@ -47,14 +48,17 @@
 }
 
 /* Logo bar  */
-#logobar img{
-    position: relative;
-    
-    /* width: 200px; */
-    /* margin: 25px 0; */
-}
+
 #logobar{
+    /* border: 1px solid red; */
     /* background-color: #34495e; */
+    padding: 10px;
+    margin-left: 30px;
+}
+#logobar h1{
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 /* nav bar  */
@@ -83,10 +87,21 @@
     font-size: 18px;
 }
 
-/* -----poster------  */
+.sticky{
+    position: fixed;
+    margin-top: -40px;
+    width: 100%;
+    transform: 0.5s;
+    transition: 0.5s;
+}
+
+/* ------------
+    poster
+---------------  */
 #poster{
     background-image: url(../images/pexels-burst-374870.jpg);
     height: 500px;
+    padding: 50px;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -122,11 +137,19 @@
     /* border: 1px solid; */
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
     text-align: center;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 
+    border-radius: 5px;
+
+}
+.whyChild p, .blogChild p{
+    text-align: justify;
+}
+.whyChild h2, .blogChild h2{
+    font-weight: 500;
 }
 .whyChild img, .blogChild img{
     height: 150px;
@@ -136,7 +159,7 @@
 /* ----Contact section----  */
 #contact{
     /* border: 1px solid red; */
-    padding: 20px 25px;
+    padding: 50px;
     color: white;
     background-color: #2c3e50;  
 }
@@ -175,7 +198,15 @@
 
 
 
-/* Subscribe section  */
+/* -----Blog section------  */
+.blogChild a{
+    text-decoration: none;
+}
+
+
+
+/* -----Subscribe section------  */
+
 #subscribe{
     background-color: #34495e;
     color: white;
@@ -200,42 +231,30 @@
 
 .subscribeChild input{
     padding: 10px 40px;
-    
+    outline: none;
 }
 .subscribeChild input[type="submit"]{
     /* border: 1px solid red; */
     width: 150px;
-}
-.subscribeChild input[type="text"]{
-    width: calc(100% - 160px);    
-}
-
-
-.section50 input[type="text"]{
-    font-size: 15px;
-    color: oran#34495egered;
-    margin-right: 20px;
-    border: 0px;
-    width: 45%;
-    outline: none;
-    /* border-radius: 10px; */
-
-}
-.section50 input[type="Submit"]{
-   padding: 8px 35px; 
+    padding: 8px 35px; 
    font-size: 15px;
    color: #34495e;
    background-color: #fff;
    border: 1px solid #fff;
    cursor: pointer;
 }
-.section50 input[type="Submit"]:hover{
+.subscribeChild input[type="text"]{
+    width: calc(100% - 160px); 
+    border: none;
+}
+
+.subscribeChild input[type="Submit"]:hover{
     background-color: #34495e;
     border: 1px solid #fff;
     color: #fff;
-
-
 }
+
+
 
 
 
@@ -268,8 +287,8 @@
 #footer-menu li{
     padding: 2px 10px;
     display: block;
-    width: 100%;
-    border-radius: 3px;
+    width: calc(100% - 20px);
+    /* border-radius: 3px; */
     cursor: pointer;
 }
 #footer-menu li:hover, #footer-menu li:hover a{
